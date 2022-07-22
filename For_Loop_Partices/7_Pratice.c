@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Write a C program to enter a number and print its reverse.
 #include <stdio.h>
 
@@ -14,3 +15,21 @@ void main(){
 printf("The number in reverse order is : %d \n",sum);
 
 }
+=======
+//Write a C program to enter a number and print its reverse.
+#include <stdio.h>
+
+void main(){
+    int num,r,sum=0,t;
+
+    printf("Input a number: ");
+    scanf("%d",&num);
+
+    for(t=num;num!=0;num=num/10){
+         r=num % 10;
+         sum=sum*10+r;
+    }
+printf("The number in reverse order is : %d \n",sum);
+
+}
+>>>>>>> e2f81e4dbd495fd66ce00f25c80516df13ffe453
